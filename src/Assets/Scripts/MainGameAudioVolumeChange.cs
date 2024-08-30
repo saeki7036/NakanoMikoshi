@@ -11,7 +11,7 @@ public class MainGameAudioVolumeChange : MonoBehaviour
         foreach (AudioSource source in audioSources)
         {
             if (source != null)
-                source.volume = VolumeController.volume;
+                source.volume = AudioVolumeChange.audioVolume;
         }
     }
 

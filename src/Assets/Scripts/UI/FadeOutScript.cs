@@ -1,23 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TitleScript : MonoBehaviour
+public class FadeOutScript : MonoBehaviour
 {
     bool toStage = false;
-    [SerializeField] float fadeDuration = 1f;
-    [SerializeField] float displayImageDuration = 1f;
-    [SerializeField] CanvasGroup canvasGroup;
-    private AudioSource _audioSource;
-    [SerializeField] private AudioClip ClickSound;
+    [SerializeField] private float fadeDuration = 1f;
+    [SerializeField] private float displayImageDuration = 1f;
+    [SerializeField] private CanvasGroup canvasGroup;
+    [SerializeField] private AudioSource audioSE;
+
     float m_timer;
 
-    // Update is called once per frame
-    private void Start()
-    {
-        _audioSource = GetComponent<AudioSource>();
-    }
     void Update()
     {
         if (toStage)
@@ -28,8 +24,8 @@ public class TitleScript : MonoBehaviour
 
     public void ClickStartButton()
     {
-        _audioSource.PlayOneShot(ClickSound);
         toStage = true;
+        audioSE.PlayOneShot(audioSE.clip);
     }
 
     void FadeOut()
@@ -40,7 +36,8 @@ public class TitleScript : MonoBehaviour
 
         if (m_timer > fadeDuration + displayImageDuration)
         {
-            SceneManager.LoadScene("MainGame");
+            SceneButtonController sceneButtonController = GetComponent<SceneButtonController>();
+            sceneButtonController.SceneChangeMainGameWithNoSE();
         }
     }
 }
