@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class ScreenTransitions : MonoBehaviour
 {
 
-
     [SerializeField] private Sprite[] ScreenSprits;
     [SerializeField] private GameObject[] BeforeObj;
     [SerializeField] private GameObject[] AfterObj;
@@ -20,8 +19,7 @@ public class ScreenTransitions : MonoBehaviour
     void Start()
     {
         Sprites_Nownum = 0;
-        Sprites_Maxnum = ScreenSprits.Length;
-       
+        Sprites_Maxnum = ScreenSprits.Length;    
     }
 
     // Update is called once per frame

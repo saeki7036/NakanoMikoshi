@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FinishController : MonoBehaviour
+public class FinishGame: MonoBehaviour
 {
    
     // Update is called once per frame
@@ -10,7 +10,8 @@ public class FinishController : MonoBehaviour
     {
         if (Input.GetButtonDown("Finish"))
         {
-            Application.Quit();
+            SceneButtonController sceneButtonController = GetComponent<SceneButtonController>();
+            sceneButtonController.FinishGame();          
         }
     }
 }
