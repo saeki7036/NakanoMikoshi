@@ -586,8 +586,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 757922514}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: SceneChange
-        m_Mode: 5
+        m_MethodName: SceneChangeTitle
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -746,8 +746,9 @@ GameObject:
   m_Component:
   - component: {fileID: 139124669}
   - component: {fileID: 139124670}
+  - component: {fileID: 139124671}
   m_Layer: 5
-  m_Name: ClearResultBeta
+  m_Name: ClearResult
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -772,8 +773,8 @@ RectTransform:
   - {fileID: 1505018702}
   - {fileID: 329536902}
   - {fileID: 2076578630}
-  - {fileID: 1519095554}
   - {fileID: 1154849788}
+  - {fileID: 1519095554}
   - {fileID: 1685276012}
   - {fileID: 262062124}
   - {fileID: 1793105328}
@@ -784,7 +785,7 @@ RectTransform:
   - {fileID: 1729185647}
   - {fileID: 496771692}
   m_Father: {fileID: 757922512}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -798,7 +799,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139124668}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06e29e9da3ab0624197ae4be46445bef, type: 3}
   m_Name: 
@@ -812,6 +813,25 @@ MonoBehaviour:
   audioSource: {fileID: 757922516}
   SelctSound: {fileID: 8300000, guid: 21380c5b38c3b8346af9ef87d00c25f0, type: 3}
   buttonType: 0
+--- !u!114 &139124671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139124668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc0af231a5bd7049a80e86a7842ffa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Buttons:
+  - {fileID: 1154849789}
+  - {fileID: 1519095555}
+  - {fileID: 1685276013}
+  cursol: {fileID: 628078361}
+  audioSE: {fileID: 757922516}
+  input: 1
 --- !u!1 &149443384
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,8 +1385,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 757922514}
         m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: SceneChange
-        m_Mode: 5
+        m_MethodName: SceneRerode
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1389,7 +1409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6410,10 +6430,8 @@ MonoBehaviour:
   - {fileID: 317924730}
   - {fileID: 93080185}
   - {fileID: 761331398}
-  cursor: {fileID: 1130687286}
-  audioSource: {fileID: 757922516}
-  SelctSound: {fileID: 8300000, guid: 21380c5b38c3b8346af9ef87d00c25f0, type: 3}
-  buttonType: 0
+  cursol: {fileID: 1130687286}
+  audioSE: {fileID: 757922516}
   input: 0
 --- !u!1 &731213926
 GameObject:
@@ -6682,14 +6700,14 @@ RectTransform:
   m_Children:
   - {fileID: 390793591}
   - {fileID: 1908171887}
-  - {fileID: 1344349848}
+  - {fileID: 139124669}
   - {fileID: 724757673}
   - {fileID: 174227659}
   - {fileID: 1411342819}
   - {fileID: 1127458578}
   - {fileID: 820453148}
-  - {fileID: 139124669}
   - {fileID: 1448150751}
+  - {fileID: 1344349848}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6730,7 +6748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd1b0e43690eb444965b777e55b94ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClickSound: {fileID: 8300000, guid: fb59d0d4d98e3424db87262c11dea6b0, type: 3}
+  audioSE: {fileID: 1783272856}
 --- !u!114 &757922515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6753,8 +6771,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 21380c5b38c3b8346af9ef87d00c25f0, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -8712,7 +8730,7 @@ RectTransform:
   m_Children:
   - {fileID: 1026788335}
   m_Father: {fileID: 139124669}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8764,9 +8782,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 757922514}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: SceneChange
-        m_Mode: 5
+        m_TargetAssemblyTypeName: SceneButtonController, Assembly-CSharp
+        m_MethodName: SceneRerode
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9734,7 +9752,7 @@ GameObject:
   - component: {fileID: 1344349848}
   - component: {fileID: 1344349849}
   m_Layer: 5
-  m_Name: ClearResult
+  m_Name: ClearResultBotu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9760,7 +9778,7 @@ RectTransform:
   - {fileID: 1721244640}
   - {fileID: 780365947}
   m_Father: {fileID: 757922512}
-  m_RootOrder: 2
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10521,7 +10539,7 @@ RectTransform:
   - {fileID: 1289816638}
   - {fileID: 1424163460}
   m_Father: {fileID: 757922512}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11023,7 +11041,7 @@ RectTransform:
   m_Children:
   - {fileID: 606985971}
   m_Father: {fileID: 139124669}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11075,9 +11093,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 757922514}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
-        m_MethodName: SceneChange
-        m_Mode: 5
+        m_TargetAssemblyTypeName: SceneButtonController, Assembly-CSharp
+        m_MethodName: SceneChangeTitle
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11850,7 +11868,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 757922514}
-        m_TargetAssemblyTypeName: ButtonController, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneButtonController, Assembly-CSharp
         m_MethodName: FinishGame
         m_Mode: 1
         m_Arguments:
@@ -12633,7 +12651,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fb59d0d4d98e3424db87262c11dea6b0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
