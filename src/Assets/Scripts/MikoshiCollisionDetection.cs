@@ -615,7 +615,7 @@ public class MikoshiCollisionDetection : MonoBehaviour
                 }
             }
             PeopleNumText.text = (peopleCount - 6).ToString("") + "人神輿";
-            Debug.Log("peopleCount:" + peopleCount);
+            //Debug.Log("peopleCount:" + peopleCount);
             if (peopleCount <= 6) { GameOverDirection(); gameoverController.Disapper(); }
             isSort = true;
         }

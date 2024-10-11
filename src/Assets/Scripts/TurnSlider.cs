@@ -22,14 +22,13 @@ public class TurnSlider : MonoBehaviour
         {
             RightSliser.value = RightSliser.maxValue;
             RightSliderObj.SetActive(false);
-        }
-          
-       
+        }   
     }
     public void RightTurnEnd()
     {
         RightSliderObj.SetActive(false);
     }
+
     public void LeftTurn()
     {
         LeftSliderObj.SetActive(true);
@@ -39,13 +38,13 @@ public class TurnSlider : MonoBehaviour
         {
             LeftSliser.value = LeftSliser.maxValue;
             LeftSliderObj.SetActive(false);
-        }
-           
+        }          
     }
     public void LeftTurnEnd()
     {
         LeftSliderObj.SetActive(false);
     }
+
     private void Update()
     {
         if (MikosiCollision.playerMode == MikoshiCollisionDetection.PlayerMode.Bonus
@@ -60,8 +59,7 @@ public class TurnSlider : MonoBehaviour
             {
                 LeftSliser.value = LeftSliser.maxValue;
                 LeftSliderObj.SetActive(false);
-            }
-           
+            }        
         }
     }
     // Start is called before the first frame update
