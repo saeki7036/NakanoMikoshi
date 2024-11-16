@@ -22,17 +22,16 @@ public class SceneButtonController : MonoBehaviour
     {
         SceneManager.LoadScene("MainGame");
     }
+
     public void SceneRerode()
     {
         audioSE.PlayOneShot(audioSE.clip);
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
     }
 
-
     public void FinishGame()
     {
         audioSE.PlayOneShot(audioSE.clip);
         Application.Quit();
     }
-
 }

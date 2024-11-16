@@ -12,14 +12,11 @@ public class ScreenTransitions : MonoBehaviour
     [SerializeField] private GameObject[] BeforeObj;
     [SerializeField] private GameObject[] AfterObj;
     [SerializeField] bool decideButtonMode = false;
-    int Sprites_Maxnum;
-    int Sprites_Nownum;
     
     // Start is called before the first frame update
     void Start()
     {
-        Sprites_Nownum = 0;
-        Sprites_Maxnum = ScreenSprits.Length;    
+        
     }
 
     // Update is called once per frame
@@ -41,7 +38,6 @@ public class ScreenTransitions : MonoBehaviour
 
     public void Menutrantitons()
     {
-
         foreach (var Before in BeforeObj)
         {
             Before.SetActive(false);
@@ -51,8 +47,5 @@ public class ScreenTransitions : MonoBehaviour
         {
             After.SetActive(true);
         }
-
-    }
-
-   
+    } 
 }

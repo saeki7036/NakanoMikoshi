@@ -128,6 +128,11 @@ PrefabInstance:
       objectReference: {fileID: 5561349426305759274, guid: 42fc25a477e2e8f4b96e4a0a8c96869b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42fc25a477e2e8f4b96e4a0a8c96869b, type: 3}
+--- !u!95 &412143061859773388 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 42fc25a477e2e8f4b96e4a0a8c96869b, type: 3}
+  m_PrefabInstance: {fileID: 6112137068006839901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6005573445637042614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 42fc25a477e2e8f4b96e4a0a8c96869b, type: 3}
@@ -150,5 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddedbea3637c06840b153c824a379ba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PeopleAnimator: {fileID: 412143061859773388}
   Rand: 1
   AnimationNum: 0

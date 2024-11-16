@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 134507395}
   - component: {fileID: 134507394}
   - component: {fileID: 134507397}
+  - component: {fileID: 134507398}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -220,6 +221,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96df125b498f75943bd06318490e836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &134507398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134507393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &153403307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2235620113769606727, guid: 266f59706c257974c94f6ef9a79f2e9c, type: 3}
@@ -383,8 +417,10 @@ MonoBehaviour:
   peopleCount: 0
   isFever: 0
   BonusTime: 0
+  ClearWaitTime: 0
   scaleCorrection: 4
   behindPeopleCount: 0
+  behindPeopleRow: 0
   MainBGMAudio: {fileID: 0}
   BonusBGMAudio: {fileID: 0}
   ClearBGMAudio: {fileID: 0}
@@ -394,14 +430,31 @@ MonoBehaviour:
   SubSound: {fileID: 0}
   FoodHitSound: {fileID: 8300000, guid: b1b9302ac4e37d0448b8ce457ceb8585, type: 3}
   StartSound: {fileID: 0}
+  CarTouch: {fileID: 0}
+  CarTouchCrush: {fileID: 0}
+  ClearImage: {fileID: 0}
+  MissionImage: []
   ClearResult: {fileID: 0}
   GameoverResult: {fileID: 0}
   Wait: {fileID: 0}
   BeforePlay: {fileID: 0}
   PeopleNum: {fileID: 0}
+  TimeNum: {fileID: 0}
+  FeverSliderObj: {fileID: 0}
+  FeverSliderText: {fileID: 0}
+  FeverSlider: {fileID: 0}
   WaitText: {fileID: 0}
+  TimeNumText: {fileID: 0}
   PeopleNumText: {fileID: 0}
+  ResultTimeText: {fileID: 0}
+  ResultPeoplecountText: {fileID: 0}
+  HyoukaText: {fileID: 0}
+  Clear_Good_Sprite: {fileID: 0}
+  Clear_Bad_Sprite: {fileID: 0}
   MaxWaitTime: 0
+  Clear_Good_Time: 2
+  cameraController: {fileID: 0}
+  mikosiAnimationController: {fileID: 0}
   playerMode: 0
 --- !u!4 &600461323 stripped
 Transform:
@@ -418,6 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -502,6 +556,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &816756588
 GameObject:
   m_ObjectHideFlags: 0

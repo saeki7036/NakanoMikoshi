@@ -9,17 +9,17 @@ public class AudioVolumeChange : SelectButtonScript
     [SerializeField] private AudioSource[] audioSources;
     [SerializeField] private float volume_Max = 10;
     [SerializeField] static public float audioVolume;
-  
+
+    // ‰Šú‰»ó‘Ô‚ğŠÇ—‚·‚éƒtƒ‰ƒO
+    public static bool IsInitialized = false;
+    
     private void Start()
     {
         audioVolume = volume_Max;
+        IsInitialized = true;
         SetAudioVolume();
         currentButtonIndex = Buttons.Length -1;
     }
-
-
-
-
 
     public void SetAudioVolume()
     {

@@ -29,9 +29,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4792431966611094137}
-  - {fileID: 8007202126823949089}
   - {fileID: 6941594646824571954}
   - {fileID: 2607649849708475153}
+  - {fileID: 8007202126823949089}
   - {fileID: 3334312574554626927}
   - {fileID: 3384753571829047225}
   m_Father: {fileID: 0}
@@ -46,7 +46,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fca94eecc1d56364bb4c0ae46959d027, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fca94eecc1d56364bb4c0ae46959d027, type: 3}
       propertyPath: m_LocalScale.x
@@ -433,7 +433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016784a5a76785846b2b9a8c5f300b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mikosianimationController: {fileID: 0}
+  animator: {fileID: 2762506890133710455}
+  mikosiAnimationController: {fileID: 0}
 --- !u!114 &8789300223371508833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,7 +447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4b5fd2fe180884ca440beb64772061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: []
 --- !u!1 &3580627890611900982 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1299975540765312716, guid: fca94eecc1d56364bb4c0ae46959d027, type: 3}
@@ -1404,7 +1404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016784a5a76785846b2b9a8c5f300b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mikosianimationController: {fileID: 0}
+  animator: {fileID: 1427343577902157462}
+  mikosiAnimationController: {fileID: 0}
 --- !u!114 &6559127303850572239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,7 +1418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4b5fd2fe180884ca440beb64772061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: []
 --- !u!4 &3384753571829047225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1cf028de33617ad4696f35c9f819d5ea, type: 3}
@@ -2368,19 +2368,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4000099115811669403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2670083940513087957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016784a5a76785846b2b9a8c5f300b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mikosianimationController: {fileID: 0}
 --- !u!114 &1015752054551748950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2393,7 +2380,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4b5fd2fe180884ca440beb64772061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: []
+--- !u!114 &4000099115811669403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2670083940513087957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016784a5a76785846b2b9a8c5f300b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 8796818381610781403}
+  mikosiAnimationController: {fileID: 0}
 --- !u!4 &3334312574554626927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1cf028de33617ad4696f35c9f819d5ea, type: 3}
@@ -3478,19 +3478,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &9151449902300818513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5317048943834882243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016784a5a76785846b2b9a8c5f300b1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mikosianimationController: {fileID: 0}
 --- !u!114 &956958537197780027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3503,7 +3490,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4b5fd2fe180884ca440beb64772061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: []
+--- !u!114 &9151449902300818513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5317048943834882243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016784a5a76785846b2b9a8c5f300b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7445302873033242567}
+  mikosiAnimationController: {fileID: 0}
 --- !u!1 &5591734055695590700 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8606011129743181634, guid: fca94eecc1d56364bb4c0ae46959d027, type: 3}
@@ -3950,7 +3950,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fca94eecc1d56364bb4c0ae46959d027, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fca94eecc1d56364bb4c0ae46959d027, type: 3}
       propertyPath: m_LocalScale.x
@@ -4661,7 +4661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016784a5a76785846b2b9a8c5f300b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mikosianimationController: {fileID: 0}
+  animator: {fileID: 930858256721078705}
+  mikosiAnimationController: {fileID: 0}
 --- !u!114 &6575966497516940092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4674,7 +4675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4b5fd2fe180884ca440beb64772061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: []
 --- !u!1 &8020498111516330855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8606011129743181634, guid: fca94eecc1d56364bb4c0ae46959d027, type: 3}
@@ -4926,7 +4926,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1cf028de33617ad4696f35c9f819d5ea, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1cf028de33617ad4696f35c9f819d5ea, type: 3}
       propertyPath: m_LocalScale.x
@@ -4986,7 +4986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1cf028de33617ad4696f35c9f819d5ea, type: 3}
       propertyPath: m_Name
-      value: shinsoku run right2 (2)
+      value: shinsoku run right2
       objectReference: {fileID: 0}
     - target: {fileID: 8795997787007649091, guid: 1cf028de33617ad4696f35c9f819d5ea, type: 3}
       propertyPath: m_Materials.Array.data[3]
@@ -5713,7 +5713,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 016784a5a76785846b2b9a8c5f300b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mikosianimationController: {fileID: 0}
+  animator: {fileID: 2649742809700556095}
+  mikosiAnimationController: {fileID: 0}
 --- !u!114 &4200333654818404342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5726,7 +5727,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d4b5fd2fe180884ca440beb64772061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: []
 --- !u!4 &8007202126823949089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1cf028de33617ad4696f35c9f819d5ea, type: 3}
